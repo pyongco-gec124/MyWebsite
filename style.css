@@ -1,0 +1,469 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #3971b8;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #f0f0b6; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header a.logo {
+    color: #0d47a1;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-Right a {
+    color: #3971b8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.header-Right a:hover {
+    background-color: #1565c0;
+    color: #3971b8;
+}
+
+.header-Right a.active {
+    background-color: #1976d2;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.hero-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #fbfcee;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #1976d2;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3971b8;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 4px solid #343b1b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.footer {
+    background-color: #0d47a1;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+.quotes-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.quote-card {
+    background: white;
+    padding: 30px;
+    border-left: 5px solid #1976d2;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+}
+
+.Bible-Verse {
+    display: block;
+    font-weight: bold;
+    color: #3971b8;
+    text-align: right;
+    margin-top: 10px;
+}
+.services-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.page-title {
+    color: #0d47a1;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(13, 71, 161, 0.15);
+}
+
+
+.card-image {
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    color: #1976d2;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading {
+    color: #0d47a1;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.fact-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #1976d2;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(25, 118, 210, 0.12);
+}
+
+.fact-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.fact-card h3 {
+    color: #0d47a1;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.fact-card p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.resume-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.resume-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.resume-header h1 {
+    color: #343b1b;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: #c8d69b;
+    color: #1565c0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #555555;
+    font-size: 14px;
+}
+
+
+.section-title {
+    color: #343b1b;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid #1976d2;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -38px;
+    top: 3px;
+    width: 13px;
+    height: 13px;
+    background-color: #fefefd;
+    border: 3px solid #1976d2;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: #ffffca;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.timeline-content h3 {
+    color: #0d47a1;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.timeline-content .degree {
+    color: #666666;
+    font-size: 14px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.faq-card {
+    background: #c8d69b;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #1976d2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(13, 71, 161, 0.12);
+}
+
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.faq-question h3 {
+    color: #0d47a1;
+    font-size: 18px;
+}
+
+
+.faq-answer {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #c8d69b;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #f0f0b6;
+}
+
+.faq-answer p {
+    color: #343b1b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.faq-badge {
+    background-color: #0d47a1;
+    color: #fbfcee;
+    font-weight: bold;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.answer-badge {
+    background-color: #1976d2;
+}
+
